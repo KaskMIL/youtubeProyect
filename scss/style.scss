@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+//   BEGIN HEADER
+
+header {
+    //position: fixed;
+    margin-bottom: 2rem;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    .menu-nav {
+        display: flex;
+        font-size: 1.5rem;
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin-right: 1.8rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+
+            i {
+                color: red;
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    .buscador {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(50, 50, 50);
+        padding: 0 1rem 0 0;
+        border: 0.0001rem solid rgb(50, 50, 50);
+
+        input {
+            width: 35rem;
+            height: 2.5rem;
+            background-color: black;
+            color: white;
+            outline: none;
+        }
+
+        i {
+            color: white;
+            padding-left: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    .googleItems {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin: 0 1rem;
+        }
+
+        .last {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+//END HEADER
+
+//   BEGIN MAIN
+
+main {
+    background-color: rgb(24,24,24);
+    margin: 0 4.8rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    column-gap: 1.5rem;
+    color: white;
+
+    // INIT VIDEO MAIN
+
+    .video-description{
+        margin-bottom: -0.8rem;
+        h1{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    
+    .video-stats{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .stats{
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: rgb(170,170,170);
+        }
+        .stats-items{
+            display: flex;
+            align-items: flex-end;
+            
+            
+            .items{
+                margin: 0 0.7rem;
+
+                i{
+                    font-size: 1rem;
+                    margin: 0 0.2rem;
+                }
+
+                .dots{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .sidebar-container {
+        background-color: thistle;
+    }
+}

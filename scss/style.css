@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #181818;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  margin-bottom: 2rem;
+  background-color: #212121;
+  color: white;
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+header .menu-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.8rem;
+}
+
+header .menu-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+header .menu-nav .logo i {
+  color: red;
+  font-size: 1.8rem;
+}
+
+header .menu-nav .logo span {
+  font-weight: 400;
+}
+
+header .buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #323232;
+  padding: 0 1rem 0 0;
+  border: 0.0001rem solid #323232;
+}
+
+header .buscador input {
+  width: 35rem;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+header .buscador i {
+  color: white;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+
+header .googleItems {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .googleItems i {
+  margin: 0 1rem;
+}
+
+header .googleItems .last {
+  font-size: 2.5rem;
+}
+
+main {
+  background-color: #181818;
+  margin: 0 4.8rem;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  color: white;
+}
+
+main .video-description {
+  margin-bottom: -0.8rem;
+}
+
+main .video-description h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+main .video-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .video-stats .stats {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+main .video-stats .stats-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .video-stats .stats-items .items {
+  margin: 0 0.7rem;
+}
+
+main .video-stats .stats-items .items i {
+  font-size: 1rem;
+  margin: 0 0.2rem;
+}
+
+main .video-stats .stats-items .items .dots {
+  font-size: 1.5rem;
+}
+
+main .sidebar-container {
+  background-color: thistle;
+}
+/*# sourceMappingURL=style.css.map */
