@@ -18,11 +18,13 @@ body {
 }
 
 header {
-  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   background-color: #212121;
   color: white;
   width: 100%;
-  height: 4rem;
+  height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +70,8 @@ header .menu-nav .logo i {
 }
 
 header .menu-nav .logo span {
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -0.2rem;
 }
 
 header .buscador {
@@ -86,12 +89,12 @@ header .buscador {
   border: 0.0001rem solid #323232;
 }
 
-header .buscador input {
+header .buscador input[type=text] {
   width: 35rem;
   height: 2.5rem;
   background-color: black;
   color: white;
-  outline: none;
+  border: 0.1rem solid #080808;
 }
 
 header .buscador i {
@@ -121,6 +124,7 @@ header .googleItems .last {
 main {
   background-color: #181818;
   margin: 0 4.8rem;
+  padding: 5rem 0;
   height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -131,12 +135,16 @@ main {
   color: white;
 }
 
+main .description-container {
+  padding-bottom: 1rem;
+}
+
 main .video-description {
   margin-bottom: -0.8rem;
 }
 
 main .video-description h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -178,6 +186,231 @@ main .video-stats .stats-items .items i {
 
 main .video-stats .stats-items .items .dots {
   font-size: 1.5rem;
+}
+
+main .page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .page-container .page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .page-container .page-content .page-logo {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+main .page-container .page-content .page h2 {
+  margin-bottom: -0.6rem;
+  font-size: 1rem;
+}
+
+main .page-container .page-content .page p {
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #aaaaaa;
+}
+
+main .page-container span {
+  padding: 0.7rem 1rem;
+  background-color: #cc0100;
+  color: white;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+}
+
+main .describe-container {
+  padding: 0 1rem;
+}
+
+main .describe-container ul {
+  list-style-type: none;
+}
+
+main .describe-container ul span {
+  color: #3da6ff;
+}
+
+main .describe-container ul li {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+main .describe-container .mostrarBtn {
+  padding-left: 2.4rem;
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+
+main .describe-container .mostrar {
+  display: none;
+}
+
+main .describe-section {
+  padding: 1rem 0;
+  border-top: 0.1px solid #303030;
+  border-bottom: 0.1px solid #303030;
+}
+
+main .comment-container {
+  padding: 1rem 0;
+}
+
+main .comment-container .stats-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+main .comment-container .stats-comments .comment-number {
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+
+main .comment-container .stats-comments .comment-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+}
+
+main .comment-container .stats-comments .comment-sort i {
+  font-size: 1.8rem;
+  margin-right: 0.4rem;
+}
+
+main .comment-container .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #f4511e;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+main .comment-container .add-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .comment-container .add-comment .user span {
+  font-size: 1.5rem;
+}
+
+main .comment-container .add-comment .comment {
+  padding-top: 0.3rem;
+  width: 100%;
+}
+
+main .comment-container .add-comment .comment input {
+  width: 100%;
+  height: 1.8rem;
+  background-color: #181818;
+  border: none;
+  border-bottom: 0.1px solid #303030;
+}
+
+main .otherComment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0 0 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .otherComment-container .otherComment-content p {
+  margin: 0;
+}
+
+main .otherComment-container .otherComment-content .otherComment-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .otherComment-container .otherComment-content .otherComment-name p {
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+}
+
+main .otherComment-container .otherComment-content .otherComment-name span {
+  font-size: 0.7rem;
+  color: #aaaaaa;
+}
+
+main .otherComment-container .otherComment-content .otherComment-content {
+  padding: 0.8rem 0;
+}
+
+main .otherComment-container .otherComment-content .otherComment-content p {
+  font-size: 0.9rem;
+}
+
+main .otherComment-container .otherComment-content .otherComment-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8rem;
+}
+
+main .otherComment-container .otherComment-content .otherComment-icons .up {
+  margin-right: 1rem;
+}
+
+main .otherComment-container .otherComment-content .otherComment-icons .down {
+  margin-right: 1rem;
+}
+
+main .otherComment-container .otherComment-content .otherComment-icons .responder {
+  padding-left: 1rem;
+}
+
+main .otherComment-container .otherComment-content .moreAnswers {
+  padding: 1rem 0;
+  color: #3da6ff;
+  font-size: 0.9rem;
+}
+
+main .otherComment-container .otherComment-content .moreAnswers i {
+  margin-right: 0.5rem;
 }
 
 main .sidebar-container {

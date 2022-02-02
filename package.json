@@ -23,6 +23,7 @@
   "homepage": "https://github.com/KaskMIL/youtubeProyect#readme",
   "dependencies": {
     "autoprefixer": "^10.4.2",
+    "bootstrap-icons": "^1.8.0",
     "jquery": "^3.6.0",
     "sass": "^1.49.4"
   }
